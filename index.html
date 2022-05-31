@@ -133,32 +133,7 @@
 						<img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	
                     </script>
                 </section-->
-<!-- Slide 1_1 -->
-				<section id="EO">
-					<h2>Learning outcomes</h2> 
-					<ul>
-						<li>Learn the principle of the spectral index calculation </li>
-						<li>Familiarize with different vegetation spectral indices </li>
-						<li>Get to know the Sentinel-2 spectral bands</li>
-						<li>Learn about the index database and tools available to calculate indices </li>
-						<li>Learn how the spectral indices are used in different applications: agriculture, forestry, vineyards, natural hazards: fires, windstorms </li>
-					</ul>
-					<!--<br><img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	-->
-					
-				</section>				
-<!-- Slide 1_2 -->
-				<section id="EO">
-					<h2>BoK Concepts</h2> 
-					<ul>
-						<li>[IP3-1-2] Spectral indices</li>
-						<li>[[PP1-3-4] Spectral Signature of Vegetation, Water, Soil</li>
-						<li>[PP1-1] EM radiation</li>
-						
-					</ul>
-					<!--<br><img width="600" height="250" data-src="resources\template_WhatCopernicus\3SpaceComponents.png" alt="3SpaceComponents">	-->
-					
-				</section>				
-							
+
 				
 <!-- Slide 3 -->
 			
@@ -203,30 +178,7 @@
 					<small>Source: Dong, C. (2018) Remote sensing, hydrological modelling and in situ observations in snow cover research: A review. Journal of Hydrology, 561, 573-583. </small>
 					<br>
 				</section>
-<!-- Slide 5-->				
-				<section >
-					<h2>Spectral Vegetation Principles</h2>
-
-					<p>Knowledge of the leaf cell, plant structure, status, condition and its spectral properties is essential to perform the vegetation analysis using remote sensed data. </p>
-
-					<br><img width="400" height="300" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\leaf_structure.jpeg" alt="sat1">
-					<br>
-					
-					<p> The structure of a chloroplast, and its location within a plant cell and leaf. </p>
-					<small> Source: Levetin and McMahon (2008) </small>
-					<br>
-				</section>
-<!-- Slide 6-->				
-				<section >
-					<h2>Spectral Vegetation Signatures</h2>
-
-					<br><img width="700" height="400" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\leaf_reflectance.png" alt="sat1">
-					<br>
-					<p>Dominant factor controlling leaf reflectance. </p>
-					<small>Vegetation spectra correspond to bundles of leaves and steams of Spartina alternifora, a wetland perennial grass from Kokaly et al. (2017), Soil spectrum from Clark (1999). Figure adapted by Denis, A. (2018) from Kokaly et al. (1998), Bowker et al. (1985), Curran (1989) and Thenkabail et al. (2013) </small>
-					<br>
-				</section>
-<!-- Slide 7-->	
+<!-- Slide 6-->	
 				<section >
 					<h2>Spectral Vegetation Signatures</h2>
 
@@ -247,6 +199,16 @@
 						</tr>
 					</table>
 				</section>
+<!-- Slide 7-->				
+				<section >
+					<h2>Spectral Vegetation Signatures</h2>
+
+					<br><img width="700" height="400" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\leaf_reflectance.png" alt="sat1">
+					<br>
+					<p>Dominant factor controlling leaf reflectance. </p>
+					<small>Vegetation spectra correspond to bundles of leaves and steams of Spartina alternifora, a wetland perennial grass from Kokaly et al. (2017), Soil spectrum from Clark (1999). Figure adapted by Denis, A. (2018) from Kokaly et al. (1998), Bowker et al. (1985), Curran (1989) and Thenkabail et al. (2013) </small>
+					<br>
+				</section>
 
 <!-- Slide 8-->	
 				<section> 
@@ -261,21 +223,7 @@
 					
 
 				</section>
-<!-- Slide 9-->						
-				<section >
-					<h2>Vegetation indices</h2>
-
-					<p>Spectral indices dedicated to vegetation analysis are developed based on the principle that the healthy vegetation reflects strongly in the near-infrared (NIR) spectrum while absorbing strongly in the visible red.</p>
-
-					<img width="600" height="350" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\healthy_unhealthy_tree.jpeg" alt="sat1">
-					<!--<br>
-					<small>Wu et. al. 2014.<small>
-					<br>-->
-					<br>
-
-					<small>Source: Wu Ch-D., et al. (2014) </small>
-					<br>
-					</section>		
+	
 <!-- Slide 10-->							
 				<section>
 					<h2>Rational for Vegetation Indices</h2>
@@ -311,42 +259,7 @@
 					<br>
 				</section>
 				
-<!-- Slide 13-->	
 
-				<section >
-					<h2>Simple band ratio</h2>
-
-					<p>A common practice in remote sensing is the use of band ratio to eliminate various effects such as:</p>
-						<li>irradiance (topography)</li>
-						<li>transmittance (atmospheric effects)</li>
-					</p>
-
-					<p style="text-align: left">Example of simple ratio index:</p>
-
-					<p style="text-align: left">
-						<br><b>RVI</b> - <b>R</b>atio <b>V</b>egetation <b>I</b>ndex
-						<br>
-						<br>RVI = (NIR / Red)
-						<br>For Sentinel-2 the formula is: B8 / B4, where: B8 = 842 nm, B4 = 665 nm
-					</p>
-
-				</section>
-<!-- Slide 14-->	
-				<section >
-					<h2>Simple band ratio</h2>
-
-					<p style="text-align: left">Examples:</p>
-
-					<p style="text-align: left">
-						<b>PSSRa</b> - <b>P</b>igment <b>S</b>pecific <b>S</b>imple <b>R</b>atio (chlorophyll index) algorithm (Blackburn, 1998) investigates the potential of a range of spectral approaches for quantifying pigments at the scale of the whole plant canopy. 
-					</p>
-
-					<p style="text-align: left">
-						<br>PSSRa = (NIR) / (Red)
-						<br>For Sentinel-2 the formula is: B7 / B4, where: B7 = 783 nm, B4 = 665 nm
-					</p>
-
-				</section>
 <!-- Slide 15---->	
 				<section >
 					<h2>Combination of multispectral bands</h2>
@@ -407,75 +320,7 @@
 					<br>
 					<!--<a href="#/EO"> Back to top </a>-->
 				</section>
-<!-- Slide 18---->
-				<section >
-					<h2>Indices with green wavelength</h2>
 
-					<p>Green spectral band was found to be more efficient than the red spectral band to discriminate nitrogen.</p>
-
-					<p><b>GNDVI</b> - <b>G</b>reen <b>N</b>ormalized <b>D</b>ifference <b>V</b>egetation <b>I</b>ndex (Gitelson et al. 1996) is more sensitive than NDVI to different concentration rates of chlorophyll, which is highly correlated at nitrogen.</p>
-
-					<p>GNDVI = NIR - Green / NIR + Green</p>
-
-				</section>
-<!-- Slide 19---->
-				<section >
-					<h2>Indices with green wavelength</h2>
-
-					<p>
-						<br><b>MCARI</b> - <b>M</b>odified <b>C</b>hlorophyll <b>A</b>bsorption <b>R</b>atio <b>I</b>ndex - is responsive to both leaf chlorophyll concentrations and ground reflectance.
-						<br>
-						<br>MCARI = ((Red2 - Red1) - 0.2 * (Red2 - Green)) * (Red2 / Red1)
-							<br>
-					</p>
-
-					<p>
-						<br>For Sentinel-2 the formula is:
-						<br>[(B5 - B4) - 0.2 * (B5 - B3)] * (B5 - B4),
-						<br>where: B5 = 705 nm, B4 = 665 nm, B3 = 560 nm
-					</p>
-<!-- Slide 15---->
-				</section>
-
-				<section >
-					<h2>Indices with red-edge wavelengths</h2>
-
-					<p>The 'red edge' is the name given to the abrupt reflectance change in the 680 ± 740 nm region of vegetation spectra that is caused by the combined effects of strong chlorophyll absorption and leaf internal scattering. </p>
-
-					<p>Red edge, as the inflection point of the strong red absorption to near infrared reflectance, includes the information of chlorophyll content,  nitrogen and growth status.</p>
-
-				</section>
-<!-- Slide 16---->
-				<section >
-					<h2>Indices with red-edge wavelengths</h2>
-
-					<p><b>S2REP</b> - <b>S</b>entinel-<b>2</b> <b>R</b>ed-<b>E</b>dge <b>P</b>osition Index is sensitive to both crop (chlorophyll content) N and growth status. Generally, the higher the S2REP value, the higher is the chlorophyll content (Guyot and Baret, 1988). The Sentinel-2 Band 6 (740 nm) measures the reflectance situated at the top of the linear part of the 'red edge' slope.<p>
-
-					<p>S2REP = 705 + 35 * ((Red1 + NIR)/2) - Red2 / (Red3 - Red2))</p>
-
-					<p>
-						<br>For Sentinel-2 the formula is:
-						<br>705 + 35 * ((B4 + B7)/2) - B5 / (B6 - B5)),
-						<br>where: B7 = 783 nm, B6 = 740 nm, B5 = 705 nm, B4 = 665 nm
-					</p>
-
-				</section>
-<!-- Slide 17---->
-				<section >
-					<h2>Indices with red-edge wavelengths</h2>
-
-					<p><b>IRECI</b> - <b>I</b>nverted <b>R</b>ed-<b>E</b>dge <b>C</b>hlorophyll <b>I</b>ndex algorithm incorporates the reflectance in four bands to estimate canopy chlorophyll content (Guyot and Baret, 1988; Clevers et al., 2000).<p>
-
-					<p>IRECI = (NIR - Red1) / (Red2 / Red3)</p>
-
-					<p>
-						<br>For Sentinel-2 the formula is:
-						<br>(B7 - B4) / (B5 / B6),
-						<br> where: B7 = 783 nm, B6 = 740 nm, B5 = 705 nm,
-						<br>B4 = 665 nm 
-					</p>
-
-				</section>
 <!-- Slide 18---->
 				<section >
 					<h2>Vegetation Indices Issues</h2>
@@ -487,44 +332,7 @@
 					<li>Soil brightness variations complicate the vegetation indices response especially when the vegetation cover is low – it is necessary to remove the effect of soil brightness and isolate reflectance changes from vegetation.</li>
 
 				</section>
-<!-- Slide 19---->
-				<section >
-					<h2>Indices dedicated to reduction of soil noise</h2>
 
-					<li>Reduce soil noise at the cost of decreasing the dynamic range of the index.</li>
-					<br>
-					<li>These are slightly less sensitive to changes in vegetation cover than NDVI at low levels of vegetation cover.</li>
-					<br>
-					<li>These are more sensitive to atmospheric variations than NDVI.</li>
-
-				</section>
-<!-- Slide 21---->
-				<section >
-				
-					<h2>Indices dedicated to reduction of soil noise</h2>
-
-					<p><b>SAVI</b> - <b>S</b>oil <b>A</b>djusted <b>V</b>egetation <b>I</b>ndex - use a transformation technique that minimizes soil brightness influences from spectral vegetation indices involving red and near-infrared (NIR) wavelengths. <p>
-
-					<p>SAVI = (1+L) * (NIR - Red) / (NIR + Red + L)</p>
-
-					<p>
-						<br>For Sentinel-2 the formula is:
-						<br>(B08 - B04) / (B08 + B04 + L) * (1.0 + L); L = 0.428
-						<br>where: L is a soil brightness correction factor ranging from 0 to 1
-						<br>L = 1 low vegetation cover, L = 0 high vegetation cover, L = 0.5 intermediate vegetation cover.
-					</p>
-
-				</section>
-<!-- Slide 20---->
-				<section >
-					<h2>Indices dedicated to reduction of soil noise</h2>
-					<p>Sentinel-2 - SAVI</p>
-<!--<br>-->
-					<a href="https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/savi/">https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/savi/</a></small>
-					<br>
-					<img width="800" height="400" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\SAVI_v2.jpeg" alt="sat1">
-					
-				</section>
 <!-- Slide 29---->
 				<section >
 					<h2>Vegetation Moisture Sensitive Indices</h2>
@@ -561,20 +369,7 @@
 					<small> .</small>
 					<br>
 				</section>
-<!-- Slide 21---->
-				<section >
-				<br>
-					<h2>Index Database</h2>
 
-					<p>
-						<br>! 249 spectral indices available !
-						<br><a href="https://www.indexdatabase.de/db/is.php?sensor_id=96">https://www.indexdatabase.de/db/is.php?sensor_id=96</a>.
-					</p>
-
-					<img width="800" height="450" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\Index_DataBase.jpeg" alt="sat1">
-					
-					<!--<a href="#/EO"> Back to top </a>-->
-				</section>
 <!-- Slide 22---->
 				<section >
 				<br>
@@ -598,17 +393,7 @@
 					</table>
 					<!--<a href="#/EO"> Back to top </a>-->
 				</section>
-<!-- Slide 22---->
-				<section>
-				<br>
-					<h2>Sentinel-2 Indices</h2>
 
-					<br><img width="700" height="500" data-src="https://eo4geo.sbg.ac.at/IGIK/Sentinel2_Data_and_Vegetation_Indices\SNAP.png" alt="sat1">
-					<!--<br>
-					<small>Miejsce na opis obrazka oraz ewentualny link do <a href="https://cdn.galleries.smcloud.net/t/galleries/gf-MGsz-4Hoc-QBGe_sennik-zrodlo-znaczenie-snu-zrodlo-664x442-nocrop.jpg">źródła</a>.</small>
-					<br>
-					<!--<a href="#/EO"> Back to top </a>-->
-				</section>
 
 <!-- Slide 23--->
 				<section >
